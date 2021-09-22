@@ -1,0 +1,41 @@
+.header {
+    margin-top: 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+  
+  .header {
+    display: flex;
+    width: 100%;
+    height: 80px;
+  }
+  
+  .header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .header-logo {
+    color: inherit;
+    text-decoration: inherit;
+    font-family: RobotoThin;
+    font-size: 100px;
+  }
+  
+  .header-navbar {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+  
+  
+  .header-__navigation {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 55px;
+  }
