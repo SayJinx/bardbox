@@ -5,6 +5,8 @@ import './selector.css';
 const DropdownGame = () => {
 
     console.log('Dropdown printing before the return');
+
+    
     return (
 
        <div>
