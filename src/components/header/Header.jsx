@@ -8,7 +8,7 @@ function Header () {
     return (
         <section className='header'>
             <section className='header-logo'>
-                <a href="/" className='jaskier'>Bardbox</a>
+                <a href="/" className='jaskier'><img src='https://i.ibb.co/NKNp15n/token-1.png' alt='cointoss' /></a>
                 <section className='header-left'>
                 <section className='header__navigation'>
                     <Navbar></Navbar>

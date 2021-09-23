@@ -21,6 +21,9 @@ const DropdownGame = () => {
             <option value='option 2'>Battle</option>
             <option value='option 3'>Mystery</option>
         </select>
+        <div>
+        <button>Let's go!</button>
+        </div>
         </form>
         </div>
 

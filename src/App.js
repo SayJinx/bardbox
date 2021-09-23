@@ -1,6 +1,8 @@
 import './App.css';
 import Header from './components/header/Header'
 import DropdownGame from './components/home/selector/selector.jsx';
+import Greeting from './components/home/Greeting';
+import TubeIn from './components/home/tube/Tube';
 
 function App() {
 
@@ -12,6 +14,10 @@ function App() {
       </header>
       <div>
       <DropdownGame></DropdownGame>
+      </div>
+      <div className='greetings'>
+        <Greeting></Greeting>
+        <TubeIn></TubeIn>
       </div>
     </div>
 
