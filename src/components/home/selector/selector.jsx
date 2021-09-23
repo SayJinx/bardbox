@@ -1,20 +1,25 @@
 import React from 'react';
-import Dropdown from 'react-bootstrap/dropdown'
 import './selector.css';
 
 const DropdownGame = () => {
 
-    console.log('Dropdown printing before the return');
+//    console.log('Dropdown printing before the return');
 
     
     return (
 
        <div>
         <form>
-        <label>Games and Settings</label><br />
+        <label><h3>Games and Settings</h3></label>
         <select name="drop1" id="drop1">
             <option value="option 1">Dungeons and Dragons</option>
             <option value="option 2">Into the Borderwilds</option>
+        </select>
+        <label><h3>Vibes</h3></label>
+        <select name='drop2' id='drop2'>
+            <option value='option 1'>Tavern</option>
+            <option value='option 2'>Battle</option>
+            <option value='option 3'>Mystery</option>
         </select>
         </form>
         </div>

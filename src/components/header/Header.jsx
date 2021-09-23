@@ -9,7 +9,7 @@ function Header () {
         <section className='header'>
             <section className='header-logo'>
                 <a href="/" className='jaskier'>Bardbox</a>
-                <section className='header-navbar'>
+                <section className='header-left'>
                 <section className='header__navigation'>
                     <Navbar></Navbar>
                 </section>
