@@ -17,7 +17,6 @@ function App() {
       </div>
       <div className='greetings'>
         <Greeting></Greeting>
-        <TubeIn></TubeIn>
       </div>
     </div>
 

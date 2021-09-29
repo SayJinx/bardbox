@@ -1,7 +1,8 @@
 import React from 'react';
 import './Tube.css'
 import YouTubePlaylist from 'react-youtube-playlist';
-import 'C:\Users\JP\Documents\Github\Sites\bardbox\node_modules\react-youtube-playlist\dist\styles.scss'
+//import 'C:/Users/JP/Documents/Github/Sites/bardbox/node_modules/react-youtube-playlist/dist/styles.scss'
+import 'boostrap/dist/css/bootstrap.min.css';
  
 const TubeIn = () => {
   return (
