@@ -11,3 +11,9 @@
 .App-link:visited {
   color: #f77d00;
 }
+
+.console {
+  display: flex;
+  justify-content: center;
+  margin: 35px;
+}

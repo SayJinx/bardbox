@@ -4,11 +4,12 @@ import './selector.css';
 const DropdownGame = () => {
 
 //    console.log('Dropdown printing before the return');
+// NOTE 10/19 add background-color: to the css as soon as you figure out new color scheme??
 
     
     return (
 
-       <div>
+       <div class='sidebar'>
         <form>
         <label><h3>Games and Settings</h3></label>
         <select name="drop1" id="drop1">
@@ -25,6 +26,9 @@ const DropdownGame = () => {
         <button>Let's go!</button>
         </div>
         </form>
+
+
+
         </div>
 
 

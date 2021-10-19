@@ -12,12 +12,10 @@ function App() {
       <header className="App-header">
         <Header></Header>
       </header>
-      <div>
+      <div className='console'>
       <DropdownGame></DropdownGame>
-      </div>
-      <div className='greetings'>
-        <Greeting></Greeting>
-        <Tube />
+      <Greeting />
+      <Tube />
       </div>
     </div>
 
