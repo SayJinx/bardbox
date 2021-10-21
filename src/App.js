@@ -1,4 +1,6 @@
 import './App.css';
+import './defaults.css'
+
 import Header from './components/header/Header'
 import DropdownGame from './components/home/selector/selector.jsx';
 import Greeting from './components/home/Greeting';
@@ -14,7 +16,6 @@ function App() {
       </header>
       <div className='console'>
       <DropdownGame></DropdownGame>
-      <Greeting />
       <Tube />
       </div>
     </div>

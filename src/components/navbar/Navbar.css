@@ -11,6 +11,7 @@
     color: inherit;
     text-decoration: inherit;
     text-transform: uppercase;
+    font-weight: bold;
     outline: none;
     font-size: calc(10px + 2vmin);
     color: #023152;

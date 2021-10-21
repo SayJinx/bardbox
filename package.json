@@ -17,6 +17,7 @@
     "react-dom": "^17.0.2",
     "react-player": "^2.9.0",
     "react-scripts": "4.0.3",
+    "react-select": "^5.1.0",
     "react-youtube-playlist": "^2.2.8",
     "sass": "^1.42.1",
     "web-vitals": "^1.1.2"
