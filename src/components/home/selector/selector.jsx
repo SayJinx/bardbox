@@ -16,8 +16,6 @@ const optionsVibe = [
 
 const DropdownGame = () => {
 
-    const [campaign, setCamp] = useState();
-    const [vibe, setVibe] = useState();
 
     return (
       <div class="card" styles="height: 50px; background-color: white;">
