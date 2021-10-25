@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 import ReactPlayer from 'react-player/youtube'
 
-  const Tube = (props) =>  {
+  class Tube extends Component  {
     state = {
       url: null,
       pip: false,
@@ -90,6 +90,8 @@ import ReactPlayer from 'react-player/youtube'
     ref = player => {
       this.player = player
     }
+
+    render () {
 
       const { url, playing, light, volume, muted, loop, playbackRate, pip } = this.state
 
@@ -186,5 +188,5 @@ import ReactPlayer from 'react-player/youtube'
     )
 
 }
-
+  }
 export default Tube;
