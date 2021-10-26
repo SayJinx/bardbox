@@ -7,11 +7,8 @@ import Greeting from './components/home/Greeting';
 import Tube from './components/home/tube/Tube';
 
 function App() {
-  
-const selection = {
-  campaign: '',
-  vibe: '',
-}
+  const [campaign, setCamp] = useState();
+  const [vibe, setVibe] = useState();
 
   return (
 
@@ -20,8 +17,8 @@ const selection = {
         <Header></Header>
       </header>
       <div className='console'>
-      <DropdownGame></DropdownGame>
-      <Tube />
+      <DropdownGame setCamp={setCamp} setVibe={setVibe}></DropdownGame>
+      <Tube campaign={campaign} vibe={vibe} />
       </div>
     </div>
 

@@ -1,15 +1,12 @@
 import React from 'react'
 import ReactPlayer from 'react-player/youtube'
 
-const Tube = ({props}) => {
+const Tube = ({campaign, vibe}) => {
 
   const ref = react.createRef();
-  let selections = {
-    campaign: props.campaign.value,
-    vibe: props.vibe.value,
-  };
 
-  const camp = selections(campaign);
+  const camp = props.campaign;
+  const vibe = props.vibe;
   const url = '';
   console.log(camp);
 
@@ -26,6 +23,7 @@ const Tube = ({props}) => {
 
   return (
     <div>
+    <h2>Playing {props.vibe} for {props.campaign}</h2>
       <ReactPlayer 
       width='100%'
       height='100%'

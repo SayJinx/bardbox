@@ -14,10 +14,9 @@ const optionsVibe = [
     {value: 'set3', label: 'Mystery'},
 ];
 
-const DropdownGame = () => {
+const DropdownGame = ({setCamp, setVibe}) => {
 
-  const [campaign, setCamp] = useState();
-  const [vibe, setVibe] = useState();
+
 
     return (
       <div class="card" styles="height: 50px; background-color: white;">
