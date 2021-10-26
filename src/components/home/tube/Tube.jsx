@@ -1,7 +1,41 @@
-import React, { Component } from 'react'
+import React from 'react'
 import ReactPlayer from 'react-player/youtube'
 
-  class Tube extends Component  {
+const Tube = ({props}) => {
+
+  const ref = react.createRef();
+  let selections = {
+    campaign: props.campaign.value,
+    vibe: props.vibe.value,
+  };
+
+  const camp = selections(campaign);
+  const url = '';
+  console.log(camp);
+
+  const keys = Object.keys(selections);
+  console.log(keys);
+
+  for (item in selections) {
+    if (selections(campaign) === 'camp1') {
+
+    } else if (selections(campaign) === 'camp2') {
+
+    }
+  }
+
+  return (
+    <div>
+      <ReactPlayer 
+      width='100%'
+      height='100%'
+      url={url} />
+    </div>
+  );
+
+}
+
+ /* class Tube extends Component  {
     state = {
       url: null,
       pip: false,
@@ -188,5 +222,7 @@ import ReactPlayer from 'react-player/youtube'
     )
 
 }
-  }
+  }*/
+
+
 export default Tube;

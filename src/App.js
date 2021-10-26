@@ -8,8 +8,10 @@ import Tube from './components/home/tube/Tube';
 
 function App() {
   
-  const [campaign, setCamp] = useState();
-  const [vibe, setVibe] = useState();
+const selection = {
+  campaign: '',
+  vibe: '',
+}
 
   return (
 
