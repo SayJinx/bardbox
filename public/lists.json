@@ -1,0 +1,15 @@
+{
+
+    "camp1": {
+        "set1": "https://www.youtube.com/playlist?list=PL355D12B3DE62909C",
+        "set2":"https://www.youtube.com/playlist?list=PLgO_sIKAHuP7_8dJAPGhFkx1lAnybznZI",
+        "set3":"https://www.youtube.com/playlist?list=PLDdeqOfW6dsJhBx_nRrUnM2sGCYevLRyf"
+    },
+
+    "camp2": {
+        "set1": "https://www.youtube.com/playlist?list=PL355D12B3DE62909C",
+        "set2":"https://www.youtube.com/playlist?list=PLgO_sIKAHuP7_8dJAPGhFkx1lAnybznZI",
+        "set3":"https://www.youtube.com/playlist?list=PLDdeqOfW6dsJhBx_nRrUnM2sGCYevLRyf"
+    }
+
+}

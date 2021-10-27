@@ -1,29 +1,30 @@
 import React from 'react'
 import ReactPlayer from 'react-player/youtube'
 
-const Tube = ({campaign, vibe}) => {
-
-  const ref = react.createRef();
-
-  const camp = props.campaign;
-  const vibe = props.vibe;
-  const url = '';
-  console.log(camp);
-
-  const keys = Object.keys(selections);
-  console.log(keys);
-
-  for (item in selections) {
-    if (selections(campaign) === 'camp1') {
-
-    } else if (selections(campaign) === 'camp2') {
-
-    }
+const game = {
+  'camp1': {
+        set1: 'https://www.youtube.com/playlist?list=PL355D12B3DE62909C',
+        set2: 'https://www.youtube.com/playlist?list=PLgO_sIKAHuP7_8dJAPGhFkx1lAnybznZI',
+        set3: 'https://www.youtube.com/playlist?list=PLDdeqOfW6dsJhBx_nRrUnM2sGCYevLRyf',
+    },
+  'camp2': {
+        set1: 'https://www.youtube.com/playlist?list=PL355D12B3DE62909C',
+        set2: 'https://www.youtube.com/playlist?list=PLgO_sIKAHuP7_8dJAPGhFkx1lAnybznZI',
+        set3: 'https://www.youtube.com/playlist?list=PLDdeqOfW6dsJhBx_nRrUnM2sGCYevLRyf',
+    },
   }
+
+  const Tube = ({campaign, vibe}) => {
+    const tCamp = campaign.value;
+    const tVibe = vibe.value;
+    const url = game['tCamp']?.['tVibe'] ?? '';
+
+console.log(tCamp); //testing to see if props pass.
+console.log(tVibe);
+console.log(url);
 
   return (
     <div>
-    <h2>Playing {props.vibe} for {props.campaign}</h2>
       <ReactPlayer 
       width='100%'
       height='100%'

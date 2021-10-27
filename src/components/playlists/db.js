@@ -12,4 +12,4 @@ let game = [
     }},
 ]
 
-module.exports = {data: text}
+export default game
