@@ -10,6 +10,9 @@ function App() {
   const [campaign, setCamp] = useState();
   const [vibe, setVibe] = useState();
 
+//  console.log(campaign);
+//  console.log(vibe);
+
   return (
 
     <div className="App">
@@ -18,7 +21,8 @@ function App() {
       </header>
       <div className='console'>
       <DropdownGame setCamp={setCamp} setVibe={setVibe}></DropdownGame>
-      <Tube campaign={campaign} vibe={vibe} />
+      {campaign && vibe && <Tube campaign={campaign} vibe={vibe} />}
+
       </div>
     </div>
 

@@ -16,11 +16,13 @@ const game = {
 
   const Tube = ({campaign, vibe}) => {
     const tCamp = campaign.value;
-    const tVibe = vibe.value; //Removing .value works *sometimes* Others, it doesn't seem to matter.
-    const url = game[campaign]?.[vibe] ?? '';
+    const tVibe = vibe.value; 
 
-console.log(campaign); //testing to see if props pass.
-console.log(vibe);
+    const url = game[tCamp][tVibe] //game['tCamp']?.['tVibe'] ?? '';
+
+//console.log(campaign); //testing to see if props pass.
+//console.log(vibe);
+console.log(game.camp1.set1);
 console.log(url);
 
   return (
