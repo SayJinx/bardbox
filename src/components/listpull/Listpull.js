@@ -2,6 +2,12 @@ import React from 'react';
 
 function ListPull() {
 
+/*  return (
+    <div>
+      <h2>The List Puller will be here.</h2>
+    </div>
+  )*/
+
     let pagetoken = '';
     let resultCount = 0;
     const mykey = 'AIzaSyCaQ-Y1jr2ffZIJkKxbHwkfvIBz-igqPsg'
@@ -53,4 +59,5 @@ function ListPull() {
         console.log("Looks like there was a problem: \n", error);
       });
   }
+  
 export default ListPull;
