@@ -1,63 +1,53 @@
-import React from 'react';
+import React, { useState } from 'react';
+import {Actions} from 'react-native-router-flux';
 
-function ListPull() {
+const API_KEY = "AIzaSyCaQ-Y1jr2ffZIJkKxbHwkfvIBz-igqPsg";
 
-/*  return (
-    <div>
-      <h2>The List Puller will be here.</h2>
-    </div>
-  )*/
+export default function ListPull({pId}) {
 
-    let pagetoken = '';
-    let resultCount = 0;
-    const mykey = 'AIzaSyCaQ-Y1jr2ffZIJkKxbHwkfvIBz-igqPsg'
-    const playListID = "PLzMXToX8Kzqggrhr-v0aWQA2g8pzWLBrR";
-  
-    const URL =  `https://www.googleapis.com/youtube/v3/playlistItems?
-  part=snippet
-  &maxResults=50
-  &playlistId=${playListID}
-  &key=${mykey}`;
-  
-  
-    fetch(URL)
-      .then(response => {
-        return response.json();
-      })
-      .then(function(response) {
-  
-        resultCount = response.pageInfo.totalResults;
-        console.log("ResultCount: " + resultCount);
-  
-        pagetoken = response.nextPageToken;
-        console.log("PageToken: " + pagetoken);
-  
-        resultCount = resultCount - 50;
-        console.log("ResultCount: " + resultCount);
-  
-        while (resultCount > 0) {
-  
-          const URL = `https://www.googleapis.com/youtube/v3/playlistItems?
-  part=snippet
-  &maxResults=50
-  &playlistId=${playListID}
-  &key=${mykey}
-  &pageToken=${pagetoken}`;
-  
-          fetch(URL)
-            .then(response => {
-              return response.json();
-            })
-            .then(function(response) {
-              pagetoken = response.nextPageToken ? response.nextPageToken : null;
-              console.log("PageToken: " + pagetoken);
-            });
-          resultCount = resultCount - 50;
-        }
-      })
-      .catch(function(error) {
-        console.log("Looks like there was a problem: \n", error);
-      });
-  }
-  
-export default ListPull;
+  const [vids, setVids] = useState([]);
+  const PLAYLIST_ID = "PLScC8g4bqD47c-qHlsfhGH3j6Bg7jzFy-";
+
+  fetchPlaylistData = async () => {
+    fetch(`https://www.googleapis.com/youtube/v3/playlistItems?playlistId=${PLAYLIST_ID}&part=snippet%2CcontentDetails&key=${API_KEY}`)
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+
+      setVids(data.items.snippet);
+    });
+  };
+
+  //json path: items > snippet> title (also snippet > thumbail > default > url?)
+
+    return (
+      <ul>
+        <li>
+          {items.map((vids) => <h2>Song: {vids.title}</h2>)}
+        </li>
+      </ul>
+    );
+
+/*    return response.json (
+      <div>
+            <FlatList
+              data={this.state.videos}
+              renderItem={
+                ({item}) => 
+                <TouchableOpacity
+                    style={styles.demacate}
+                    onPress={() => this.watchVideo(item.contentDetails.videoId)}
+                >
+                <Text 
+                  style={styles.item} 
+                > 
+                {item.snippet.title} 
+                </Text>
+                </TouchableOpacity>
+              }
+            />
+      </div>
+    );*/
+
+}

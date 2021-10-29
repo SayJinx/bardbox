@@ -1,35 +1,17 @@
 import React from 'react'
 import ReactPlayer from 'react-player/youtube'
 
-const game = {
-  'camp1': {
-        set1: 'https://www.youtube.com/playlist?list=PL355D12B3DE62909C',
-        set2: 'https://www.youtube.com/playlist?list=PLgO_sIKAHuP7_8dJAPGhFkx1lAnybznZI',
-        set3: 'https://www.youtube.com/playlist?list=PLDdeqOfW6dsJhBx_nRrUnM2sGCYevLRyf',
-    },
-  'camp2': {
-        set1: 'https://www.youtube.com/playlist?list=PL355D12B3DE62909C',
-        set2: 'https://www.youtube.com/playlist?list=PLgO_sIKAHuP7_8dJAPGhFkx1lAnybznZI',
-        set3: 'https://www.youtube.com/playlist?list=PLDdeqOfW6dsJhBx_nRrUnM2sGCYevLRyf',
-    },
-  }
 
-  const Tube = ({campaign, vibe}) => {
-    const tCamp = campaign.value;
-    const tVibe = vibe.value; 
 
-    const url = game[tCamp][tVibe] //game['tCamp']?.['tVibe'] ?? '';
+  const Tube = ({pId}) => {
 
-//console.log(campaign); //testing to see if props pass.
-//console.log(vibe);
-console.log(game.camp1.set1);
-console.log(url);
+    const url = `https://www.youtube.com/playlist?list=${pId}`
 
   return (
     <div>
       <ReactPlayer 
-      width='100%'
-      height='100%'
+      width='200%'
+      height='200%'
       url={url} />
     </div>
   );

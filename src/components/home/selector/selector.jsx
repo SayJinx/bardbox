@@ -1,7 +1,20 @@
-import { React, useRef, useState } from 'react';
+import { React, useState } from 'react';
 import Select from 'react-select';
 
 import './selector.css';
+
+const game = {
+  'camp1': {
+        set1: 'https://www.youtube.com/playlist?list=PL355D12B3DE62909C',
+        set2: 'https://www.youtube.com/playlist?list=PLgO_sIKAHuP7_8dJAPGhFkx1lAnybznZI',
+        set3: 'https://www.youtube.com/playlist?list=PLDdeqOfW6dsJhBx_nRrUnM2sGCYevLRyf',
+    },
+  'camp2': {
+        set1: 'https://www.youtube.com/playlist?list=PL355D12B3DE62909C',
+        set2: 'https://www.youtube.com/playlist?list=PLgO_sIKAHuP7_8dJAPGhFkx1lAnybznZI',
+        set3: 'https://www.youtube.com/playlist?list=PLDdeqOfW6dsJhBx_nRrUnM2sGCYevLRyf',
+    },
+  }
 
 const optionsCamp = [
     {value: 'camp1', label: 'Dungeons & Dragons'},
@@ -14,8 +27,12 @@ const optionsVibe = [
     {value: 'set3', label: 'Mystery'},
 ];
 
-const DropdownGame = ({setCamp, setVibe}) => {
+const DropdownGame = ({setPid}) => {
 
+  const [campaign, setCamp] = useState();
+  const [vibe, setVibe] = useState();
+
+  const setPid = game[campaign.value][vibe.value]
 
 
     return (
