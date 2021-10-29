@@ -26,14 +26,14 @@ function App() {
         <Switch>
           <Route exact path="/">
             <DropdownGame setPid={setPid}></DropdownGame>
-            {campaign && vibe && <Tube campaign={campaign} vibe={vibe} />}
+            {pId && <Tube pId={pId} />}
           </Route>
         </Switch>
 
         <Switch>
           <Route exact path="/playlists">
             <DropdownGame setPid={setPid}></DropdownGame>
-            {campaign && vibe && <ListPull campaign={campaign} vibe={vibe} />}
+            {pId && <ListPull pId={pId} />}
           </Route>
         </Switch>
 
