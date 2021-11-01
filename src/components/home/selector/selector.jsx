@@ -5,14 +5,16 @@ import './selector.css';
 
 const game = {
   'camp1': {
-        set1: 'PL355D12B3DE62909C',
-        set2: 'PLgO_sIKAHuP7_8dJAPGhFkx1lAnybznZI',
-        set3: 'PLDdeqOfW6dsJhBx_nRrUnM2sGCYevLRyf',
+        set1: 'PLkfbiMuK-mUinblYEf_fgfhWgvDZSSo52',
+        set2: 'PL_YVtQT52tCe-0x0fiyXE7060LlsG8CFx',
+        set3: 'PLk8P9Zfq6_boJJaCx-MGHAl5ZJsx-setH',
+        set4: 'PLccmC0-jXVkiQF1uMehdwqSlpXafNAe_e'
     },
   'camp2': {
-        set1: 'PL355D12B3DE62909C',
-        set2: 'PLgO_sIKAHuP7_8dJAPGhFkx1lAnybznZI',
-        set3: 'PLDdeqOfW6dsJhBx_nRrUnM2sGCYevLRyf',
+        set1: 'PL_YVtQT52tCd4QVH2MdU5ry47inusGaVV',
+        set2: 'PL_YVtQT52tCfSU-nRuRJcbrPMnFFV6lPS',
+        set3: 'PL_YVtQT52tCc_eAHX0NpRTNUfYRP9AGId',
+        set4: 'PL_YVtQT52tCdid93V1emfyFahL9a4cj2g'
     },
   }
 
@@ -25,6 +27,7 @@ const optionsVibe = [
     {value: 'set1', label: 'Tavern/Relax'},
     {value: 'set2', label: 'Battle'},
     {value: 'set3', label: 'Mystery'},
+    {value: 'set4', label: 'Ambient',}
 ];
 
 const DropdownGame = ({setPid}) => {
