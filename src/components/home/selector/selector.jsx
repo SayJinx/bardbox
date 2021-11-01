@@ -1,6 +1,6 @@
 import { React, useState, useEffect } from 'react';
 import Select from 'react-select';
-
+import { Card, } from 'react-bootstrap';
 import './selector.css';
 
 const game = {
@@ -41,12 +41,12 @@ const DropdownGame = ({setPid}) => {
   [campaign, vibe]);
 
     return (
-      <div class="card" styles="height: 50px; background-color: white;">
+      <Card className='h-100 shadow-sm bg-white rounded'>
         <div class="card-body">
           <table>
             <tbody>
               <tr>
-                <th>Campaign</th>
+                <Card.Title ClassName='m-auto p-20 font-weight-bold'>Campaign</Card.Title>
                 <td>
                   <Select 
                     placeHolder='Select Campaign'
@@ -57,7 +57,7 @@ const DropdownGame = ({setPid}) => {
                 </td>
               </tr>
               <tr>
-                <th>Vibe</th>
+              <Card.Title ClassName='mb-0 font-weight-bold'>Vibe</Card.Title>
                 <td>
                   <Select 
                         placeHolder='Select Vibe'
@@ -70,7 +70,7 @@ const DropdownGame = ({setPid}) => {
             </tbody>
           </table>
         </div>
-      </div>
+      </Card>
     );
 
 

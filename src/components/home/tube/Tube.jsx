@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactPlayer from 'react-player/youtube'
-import Greeting from 'greeting';
+import Greeting from '../Greeting';
+import { Card, Col } from 'react-bootstrap';
 
 
 
@@ -10,13 +11,15 @@ import Greeting from 'greeting';
 
   return (
 
-    <div>
+    <Card className='h-150 w-50 shadow-sm bg-white rounded'>
+      <Col  className='m-auto p-20'>
       <Greeting />
       <ReactPlayer 
-      width='200%'
-      height='200%'
+      width='100%'
+      height='100%'
       url={url} />
-    </div>
+      </Col>
+    </Card>
   );
 
 }
