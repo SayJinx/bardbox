@@ -12,7 +12,7 @@ export default function ListPull({pId}) {
   useEffect(() => {
     if(pId) {fetchPlaylistData()}
   }, 
-  [pId]);
+  [pId, fetchPlaylistData]);
 
   const fetchPlaylistData = async () => {
     fetch(`https://www.googleapis.com/youtube/v3/playlistItems?playlistId=${PLAYLIST_ID}&part=snippet%2CcontentDetails&key=${API_KEY}`)

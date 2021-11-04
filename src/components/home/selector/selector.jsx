@@ -38,7 +38,7 @@ const DropdownGame = ({setPid}) => {
   useEffect(() => {
     if(campaign.value && vibe.value) {setPid(game[campaign.value][vibe.value])}
   }, 
-  [campaign, vibe]);
+  [campaign, vibe, setPid]);
 
     return (
       <Card className='h-100 shadow-sm bg-white rounded'>
