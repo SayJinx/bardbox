@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { React, useState, useEffect } from 'react';
 import Select from 'react-select';
 import { Card, } from 'react-bootstrap';
@@ -38,7 +39,7 @@ const DropdownGame = ({setPid}) => {
   useEffect(() => {
     if(campaign.value && vibe.value) {setPid(game[campaign.value][vibe.value])}
   }, 
-  [campaign, vibe, setPid]);
+  [campaign, vibe]);
 
     return (
       <Card className='h-100 shadow-sm bg-white rounded'>

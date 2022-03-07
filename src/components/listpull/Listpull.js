@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react';
 
 const API_KEY = "AIzaSyCaQ-Y1jr2ffZIJkKxbHwkfvIBz-igqPsg";
@@ -12,7 +13,7 @@ export default function ListPull({pId}) {
   useEffect(() => {
     if(pId) {fetchPlaylistData()}
   }, 
-  [pId, fetchPlaylistData]);
+  [pId]);
 
   const fetchPlaylistData = async () => {
     fetch(`https://www.googleapis.com/youtube/v3/playlistItems?playlistId=${PLAYLIST_ID}&part=snippet%2CcontentDetails&key=${API_KEY}`)
