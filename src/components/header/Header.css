@@ -1,7 +1,21 @@
+.jaskier {
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  left: 80px;
+  top: 20px;
+}
+
+.header__navigation {
+  position: absolute;
+  left: 200px;
+  top: 20px;
+}
+
 .header {
-  overflow: hidden;
-  background-color: #ff7d00;
-  padding: 20px 10px;
+  overflow: visible;
+  background-image: linear-gradient(#ff7d00, #ffecd1);
+  padding: 70px 10px;
 }
 
 .header a {

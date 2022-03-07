@@ -1,8 +1,12 @@
-.App {
+html {
   text-align: left;
   background-color: #ffecd1;
 }
 
+.App {
+  text-align: left;
+  background-color: #ffecd1;
+}
 
 .App-link {
   color: #15616d;
